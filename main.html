@@ -1,0 +1,28 @@
+<html>
+    <body>
+        <input id="encodeinput">
+        <label for="encodeinput">Encode</label>
+        <br>
+        <button onclick="encode(document.getElementById('encodeinput').value, document.getElementById('encodeoutput'))">Encrypt</button>
+        <br>
+        <input readonly id="encodeoutput">
+        <hr>
+        <input id="decodeinput">
+        <label for="decodeinput">Decode</label>
+        <br>
+        <button onclick="decode(document.getElementById('decodeinput').value, document.getElementById('decodeoutput'))">Decode</button>
+        <br>
+        <input readonly id="decodeoutput">
+        <script src="encode.js"></script>
+    </body>
+    <style>
+        @font-face{
+            font-family: 'Weezer';
+            src: url("fonts/weezerfont.ttf") format('truetype');
+        }
+        *{
+            font-family: 'Weezer';
+            font-size: 24px;
+        }
+    </style>
+</html>
